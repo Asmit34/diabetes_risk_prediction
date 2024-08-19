@@ -1,0 +1,10 @@
+# Project requirements
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+pymongo
+python-dotenv
+certifi
+-e .

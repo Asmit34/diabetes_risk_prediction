@@ -1,0 +1,38 @@
+columns:
+  - Age: int
+  - Gender: object
+  - Polyuria: object
+  - Polydipsia: object
+  - SuddenWeightLoss: object
+  - Weakness: object
+  - Polyphagia: object
+  - GenitalThrush: object
+  - VisualBlurring: object
+  - Itching: object
+  - Irritability: object
+  - DelayedHealing: object
+  - PartialParesis: object
+  - MuscleStiffness: object
+  - Alopecia: object
+  - Obesity: object
+  - class: object
+
+categorical_columns:
+  - Gender
+  - Polyuria
+  - Polydipsia
+  - SuddenWeightLoss
+  - Weakness
+  - Polyphagia
+  - GenitalThrush
+  - VisualBlurring
+  - Itching
+  - Irritability
+  - DelayedHealing
+  - PartialParesis
+  - MuscleStiffness
+  - Alopecia
+  - Obesity
+  - class
+numerical_columns:
+  - Age
