@@ -9,4 +9,6 @@ python-dotenv
 certifi
 PyYAML
 dill
--e .
+spicy
+imblearn == 0.0
+# -e .

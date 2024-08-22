@@ -1,11 +1,11 @@
-from diabetes.entity.config_entity import TrainingPipelineConfig,DataIngestionConfig,DataValidationConfig
+from diabetes.entity.config_entity import TrainingPipelineConfig,DataIngestionConfig,DataValidationConfig,DataTransformationConfig
 from diabetes.entity.artifact_entity import DataIngestionArtifact, DataValidationArtifact
 from diabetes.exception import CustomException
 import sys,os
 from diabetes.logger import logging
 from diabetes.components.data_ingestion import DataIngestion
 from diabetes.components.data_validation import DataValidation
-
+from diabetes.components.data_transformation import DataTransformation
 
 
 class TrainPipeline:
@@ -45,9 +45,18 @@ class TrainPipeline:
         
         except  Exception as e:
             raise  CustomException(e,sys)
-
-
-
+        
+    def start_data_transformation(self,data_validation_artifact:DataValidationArtifact):
+        try:
+            data_transformation_config = DataTransformationConfig(training_pipeline_config=self.training_pipeline_config)
+            data_transformation = DataTransformation(data_validation_artifact=data_validation_artifact,
+            data_transformation_config=data_transformation_config
+            )
+            data_transformation_artifact =  data_transformation.initiate_data_transformation()
+            return data_transformation_artifact
+        
+        except  Exception as e:
+            raise  CustomException(e,sys)
 
 
     def run_pipeline(self):
@@ -57,6 +66,8 @@ class TrainPipeline:
              
             data_validation_artifact = self.start_data_validaton(
                 data_ingestion_artifact = data_ingestion_artifact)
+            data_transformation_artifact = self.start_data_transformation(
+                data_validation_artifact=data_validation_artifact)
            
         except Exception as e :    
             raise  CustomException(e,sys)
