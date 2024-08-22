@@ -1,0 +1,51 @@
+Age:
+  drift_status: false
+  p_value: 0.9992873051238744
+Alopecia:
+  drift_status: false
+  p_value: 1.0
+Gender:
+  drift_status: false
+  p_value: 0.9999989290095344
+Genital thrush:
+  drift_status: false
+  p_value: 0.9999999792284137
+Irritability:
+  drift_status: false
+  p_value: 0.999999999932047
+Itching:
+  drift_status: false
+  p_value: 1.0
+Obesity:
+  drift_status: false
+  p_value: 0.9934776101895
+Polydipsia:
+  drift_status: false
+  p_value: 0.9958855025270387
+Polyphagia:
+  drift_status: false
+  p_value: 0.9999999999986017
+Polyuria:
+  drift_status: false
+  p_value: 0.9998549523319191
+class:
+  drift_status: false
+  p_value: 0.9999820453163828
+delayed healing:
+  drift_status: false
+  p_value: 1.0
+muscle stiffness:
+  drift_status: false
+  p_value: 0.7516018598374379
+partial paresis:
+  drift_status: false
+  p_value: 0.9975448383454362
+sudden weight loss:
+  drift_status: false
+  p_value: 1.0
+visual blurring:
+  drift_status: false
+  p_value: 0.9999999999986017
+weakness:
+  drift_status: false
+  p_value: 0.9986265442940084

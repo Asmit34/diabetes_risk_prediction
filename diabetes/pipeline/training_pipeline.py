@@ -1,19 +1,20 @@
-from diabetes.entity.config_entity import TrainingPipelineConfig ,DataIngestionConfig
+from diabetes.entity.config_entity import TrainingPipelineConfig,DataIngestionConfig,DataValidationConfig
+from diabetes.entity.artifact_entity import DataIngestionArtifact, DataValidationArtifact
 from diabetes.exception import CustomException
-from diabetes.entity.artifact_entity import DataIngestionArtifact
+import sys,os
 from diabetes.logger import logging
-import sys , os 
 from diabetes.components.data_ingestion import DataIngestion
+from diabetes.components.data_validation import DataValidation
+
+
 
 class TrainPipeline:
-
     def __init__(self):
         self.training_pipeline_config = TrainingPipelineConfig()
 
 
     def start_data_ingestion(self)->DataIngestionArtifact:
         try:
-            
             self.data_ingestion_config = DataIngestionConfig(training_pipeline_config=self.training_pipeline_config)
 
             logging.info("Starting data ingestion")
@@ -28,9 +29,34 @@ class TrainPipeline:
             raise  CustomException(e,sys)
 
 
+    def start_data_validaton(self,data_ingestion_artifact:DataIngestionArtifact)->DataValidationArtifact:
+        
+        try:
+            data_validation_config = DataValidationConfig(
+                training_pipeline_config=self.training_pipeline_config)
+            data_validation = DataValidation(
+            data_ingestion_artifact=data_ingestion_artifact,
+            data_validation_config = data_validation_config
+            )
+
+            data_validation_artifact = data_validation.initiate_data_validation()
+
+            return data_validation_artifact
+        
+        except  Exception as e:
+            raise  CustomException(e,sys)
+
+
+
+
 
     def run_pipeline(self):
         try:
-             data_ingestion_artifact:DataIngestionArtifact = self.start_data_ingestion()
+            data_ingestion_artifact:DataIngestionArtifact = self.start_data_ingestion()
+
+             
+            data_validation_artifact = self.start_data_validaton(
+                data_ingestion_artifact = data_ingestion_artifact)
+           
         except Exception as e :    
             raise  CustomException(e,sys)
