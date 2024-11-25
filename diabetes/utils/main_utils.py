@@ -54,7 +54,7 @@ def load_numpy_array_data(file_path:str)->np.array:
     """
     try:
         with open(file_path, "rb") as file_obj:
-            return np.load(file_obj)
+            return np.load(file_obj,allow_pickle= True)
     
     except Exception as e:
         raise CustomException(e, sys)
@@ -70,3 +70,13 @@ def save_object(file_path:str, obj: object)-> None:
 
     except Exception as e:
         raise CustomException(e, sys)
+    
+
+def load_object(file_path: str, ) -> object:
+    try:
+        if not os.path.exists(file_path):
+            raise Exception(f"The file: {file_path} is not exists")
+        with open(file_path, "rb") as file_obj:
+            return dill.load(file_obj)
+    except Exception as e:
+        raise CustomException(e, sys) from e

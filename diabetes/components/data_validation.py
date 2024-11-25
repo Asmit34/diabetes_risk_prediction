@@ -42,15 +42,17 @@ class DataValidation:
      try:
         # Get the list of numerical columns from the schema
         numerical_columns = self._schemma_config.get("numerical_columns", [])
-        print("numerical_columns from schema:", numerical_columns)
+        # print("numerical_columns from schema:", numerical_columns)
         
         # Get the DataFrame columns
         dataframe_columns = dataframe.columns
-        print("dataframe_columns:", dataframe_columns)
+        # print("dataframe_columns:", dataframe_columns)
 
         # Find any missing numerical columns
         missing_numerical_columns = [col for col in numerical_columns if col not in dataframe_columns]
-
+        # print("missing_numerical_columns:", missing_numerical_columns)
+        
+        
         # Log if any numerical columns are missing
         if missing_numerical_columns:
             logging.info(f"Missing numerical columns: {missing_numerical_columns}")
@@ -66,14 +68,15 @@ class DataValidation:
     def is_categorical_column_exist(self, dataframe: pd.DataFrame) -> bool:
      try:
         categorical_columns = self._schemma_config.get("categorical_columns", [])
-        print("Categorical columns from schema:", categorical_columns)
+        # print("Categorical columns from schema:", categorical_columns)
         dataframe_columns = dataframe.columns
-        print("Dataframe columns:", dataframe_columns)
+        # print("Dataframe columns:", dataframe_columns)
 
         # Find missing categorical columns
         missing_categorical_columns = [
             col for col in categorical_columns if col not in dataframe_columns
         ]
+        # print("missing_categorical_columns:",missing_categorical_columns)
 
         if missing_categorical_columns:
             logging.info(f"Missing categorical columns: {missing_categorical_columns}")
@@ -181,8 +184,8 @@ class DataValidation:
                 invalid_test_file_path=None,
                 drift_report_file_path=self.data_validation_config.drift_report_file_path,
             )
-            print("Train DataFrame columns:", train_dataframe.columns)
-            print("Test DataFrame columns:", test_dataframe.columns)
+            # print("Train DataFrame columns:", train_dataframe.columns)
+            # print("Test DataFrame columns:", test_dataframe.columns)
 
             logging.info(f"Data validation artifact: {data_validation_artifact}")
 
