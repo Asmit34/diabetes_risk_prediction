@@ -1,0 +1,27 @@
+2024-11-09 10:18:44,311 - ERROR - An error occurred: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- Delayed Healing
+- Genital Thrush
+- Muscle Stiffness
+- Partial Paresis
+- Sudden Weight Loss
+- ...
+Feature names seen at fit time, yet now missing:
+- Genital thrush
+- delayed healing
+- muscle stiffness
+- partial paresis
+- sudden weight loss
+- ...
+
+2024-11-09 10:21:58,573 - ERROR - An error occurred: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- sudden weight Loss
+Feature names seen at fit time, yet now missing:
+- sudden weight loss
+
+2024-11-09 10:22:28,515 - INFO - User data: [{'Age': 43, 'Gender': 1, 'Polyuria': 1, 'Polydipsia': 0, 'sudden weight loss': 0, 'weakness': 0, 'Polyphagia': 1, 'Genital thrush': 1, 'visual blurring': 0, 'Itching': 1, 'Irritability': 0, 'delayed healing': 0, 'partial paresis': 1, 'muscle stiffness': 0, 'Alopecia': 1, 'Obesity': 0}]
+2024-11-09 10:22:28,517 - INFO - Prediction Probability: 0.08
+2024-11-09 10:22:28,517 - INFO - Diabetes Prediction: Negative
+2024-11-09 10:22:28,518 - INFO - Recommendation: Low Risk: Maintain a healthy lifestyle with a balanced diet and regular exercise. 
+Continue routine check-ups and stay informed about preventive health measures.

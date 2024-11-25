@@ -1,0 +1,268 @@
+2024-11-16 16:25:07,153 - app - INFO - Connected to MongoDB successfully.
+2024-11-16 16:25:08,956 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-16 17:13:09,437 - app - INFO - Connected to MongoDB successfully.
+2024-11-16 17:13:16,042 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-16 17:14:04,667 - app - INFO - Received registration data: {'first_name': 'asmit', 'last_name': 'oli', 'gender': 'Female', 'email': 'user43@gmail.com', 'phone': '9822234347', 'address': 'string', 'password': 'strinewewg'}
+2024-11-16 17:14:05,537 - app - INFO - User registered successfully with ID: 673882012e85fb52067cd926
+2024-11-16 17:16:13,941 - app - INFO - Received registration data: {'first_name': 'Asmit ', 'last_name': 'oli', 'gender': 'Male', 'email': 'oliasmit872@gmail.com', 'phone': '9810963693', 'address': 'oliasmit872@gmail.com', 'password': 'kjwnkqjnwdjnq'}
+2024-11-16 17:16:14,075 - app - INFO - User registered successfully with ID: 673882822e85fb52067cd927
+2024-11-16 17:18:28,555 - app - INFO - Received registration data: {'first_name': 'Asmit ', 'last_name': 'oli', 'gender': 'Male', 'email': 'oliasmit872@gmail.com', 'phone': '9810963693', 'address': 'oliasmit872@gmail.com', 'password': 'hjvjhvhv'}
+2024-11-16 17:18:28,620 - app - WARNING - Email already registered: oliasmit872@gmail.com
+2024-11-16 17:18:28,623 - app - ERROR - Error during registration: 400: Email already registered
+2024-11-16 17:18:45,512 - app - INFO - Received registration data: {'first_name': 'Asmit ', 'last_name': 'oli', 'gender': 'Male', 'email': 'oliasmit872@gmail.com', 'phone': '9810963693', 'address': 'oliasmit872@gmail.com', 'password': 'kjvjhvhjv'}
+2024-11-16 17:18:45,561 - app - WARNING - Email already registered: oliasmit872@gmail.com
+2024-11-16 17:18:45,561 - app - ERROR - Error during registration: 400: Email already registered
+2024-11-16 17:19:44,556 - app - INFO - Received registration data: {'first_name': 'asmit', 'last_name': 'oli', 'gender': 'Male', 'email': 'asmis12@gmail.com', 'phone': '9810963693', 'address': 'ktm', 'password': 'kwjbajsbasd'}
+2024-11-16 17:19:44,670 - app - INFO - User registered successfully with ID: 673883542e85fb52067cd928
+2024-11-16 17:22:01,706 - app - INFO - Received registration data: {'first_name': 'jkj', 'last_name': 'lknkj', 'gender': 'Female', 'email': 'aasda3@gmail.com', 'phone': '9810963693', 'address': 'ktm', 'password': 'aknajskjankjs'}
+2024-11-16 17:22:01,844 - app - INFO - User registered successfully with ID: 673883dd2e85fb52067cd929
+2024-11-18 19:42:56,376 - app - INFO - Connected to MongoDB successfully.
+2024-11-18 19:43:06,702 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-18 20:03:02,269 - app - INFO - Connected to MongoDB successfully.
+2024-11-18 20:03:05,297 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-18 20:11:44,914 - app - INFO - Connected to MongoDB successfully.
+2024-11-18 20:11:47,774 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-18 20:11:53,210 - app - ERROR - Prediction error: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 184, in predict
+    recommendation = get_medical_recommendation(probability)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_medical_recommendation' is not defined. Did you mean: 'get_detailed_medical_recommendation'?
+
+2024-11-18 20:12:31,808 - app - INFO - Connected to MongoDB successfully.
+2024-11-18 20:12:34,762 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-18 20:14:26,690 - app - INFO - Connected to MongoDB successfully.
+2024-11-18 20:14:29,464 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-18 20:14:29,626 - app - ERROR - Prediction error: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 190, in predict
+    recommendation = get_medical_recommendation(probability)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_medical_recommendation' is not defined. Did you mean: 'get_medical_recommendation_html'?
+
+2024-11-18 20:14:50,322 - app - INFO - Connected to MongoDB successfully.
+2024-11-18 20:14:52,320 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-18 20:17:35,129 - app - INFO - Connected to MongoDB successfully.
+2024-11-18 20:17:37,865 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-18 20:19:24,349 - app - INFO - Connected to MongoDB successfully.
+2024-11-18 20:19:26,198 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-18 20:33:59,767 - app - INFO - Connected to MongoDB successfully.
+2024-11-18 20:34:01,944 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-18 20:34:16,636 - app - ERROR - Prediction error: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 189, in predict
+    return PredictionResponse(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asmit\Desktop\diabetes_detection\env\Lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for PredictionResponse
+recommendation
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+
+2024-11-20 17:09:25,529 - app - INFO - Connected to MongoDB successfully.
+2024-11-20 17:09:39,625 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-20 17:10:36,055 - app - ERROR - Prediction error: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 189, in predict
+    return PredictionResponse(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asmit\Desktop\diabetes_detection\env\Lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for PredictionResponse
+recommendation
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+
+2024-11-20 17:11:25,591 - app - ERROR - Prediction error: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 189, in predict
+    return PredictionResponse(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asmit\Desktop\diabetes_detection\env\Lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for PredictionResponse
+recommendation
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+
+2024-11-22 09:15:23,762 - app - INFO - Connected to MongoDB successfully.
+2024-11-22 09:15:30,375 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-22 09:16:24,712 - app - ERROR - Prediction error: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 189, in predict
+    return PredictionResponse(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asmit\Desktop\diabetes_detection\env\Lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for PredictionResponse
+recommendation
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+
+2024-11-22 09:16:55,216 - app - ERROR - Prediction error: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 189, in predict
+    return PredictionResponse(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asmit\Desktop\diabetes_detection\env\Lib\site-packages\pydantic\main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for PredictionResponse
+recommendation
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+
+2024-11-22 09:20:35,045 - app - INFO - Connected to MongoDB successfully.
+2024-11-22 09:20:37,559 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-22 09:31:15,407 - app - INFO - Connected to MongoDB successfully.
+2024-11-22 09:31:19,134 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-22 10:37:55,660 - app - INFO - Connected to MongoDB successfully.
+2024-11-22 10:37:59,412 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-22 11:10:20,984 - app - INFO - Connected to MongoDB successfully.
+2024-11-22 11:10:24,282 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-22 11:11:42,940 - app - INFO - Received registration data: {'first_name': 'Asmit', 'last_name': 'Oli', 'gender': 'Male', 'email': 'u12@gmail.com', 'phone': '9810963693', 'address': 'Kathmandu', 'password': 'asdfghjkl'}
+2024-11-22 11:11:43,750 - app - ERROR - Error during registration: name 'bcrypt' is not defined
+2024-11-22 11:11:48,916 - app - INFO - Received registration data: {'first_name': 'Asmit', 'last_name': 'Oli', 'gender': 'Male', 'email': 'u12@gmail.com', 'phone': '9810963693', 'address': 'Kathmandu', 'password': 'asdfghjkl'}
+2024-11-22 11:11:48,959 - app - ERROR - Error during registration: name 'bcrypt' is not defined
+2024-11-22 11:16:22,066 - app - INFO - Connected to MongoDB successfully.
+2024-11-22 11:16:26,203 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-22 11:16:38,822 - app - INFO - Connected to MongoDB successfully.
+2024-11-22 11:16:40,729 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-22 11:17:53,685 - app - INFO - Connected to MongoDB successfully.
+2024-11-22 11:17:57,128 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-22 11:18:38,260 - app - INFO - Received registration data: {'first_name': 'string', 'last_name': 'string', 'gender': 'Female', 'email': 'user@gmail.com', 'phone': '9810293857', 'address': 'Kathmandu', 'password': 'string123'}
+2024-11-22 11:18:39,350 - app - INFO - User registered successfully with ID: 674017b3d67d3242f7f5754e
+2024-11-22 11:19:00,020 - app - INFO - User logged in successfully: user@gmail.com
+2024-11-22 11:19:09,115 - app - WARNING - User not found: us23er@gmail.com
+2024-11-22 11:19:09,131 - app - ERROR - Error during login: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 185, in login_user
+    raise HTTPException(status_code=400, detail="Invalid email or password")
+fastapi.exceptions.HTTPException: 400: Invalid email or password
+
+2024-11-22 11:22:34,908 - app - INFO - Received registration data: {'first_name': 'Asmit', 'last_name': 'oli', 'gender': 'Male', 'email': 'oliasmit872@gmail.com', 'phone': '9810963693', 'address': 'oliasmit872@gmail.com', 'password': 'asmitoli123'}
+2024-11-22 11:22:34,972 - app - WARNING - Email already registered: oliasmit872@gmail.com
+2024-11-22 11:22:34,973 - app - ERROR - Error during registration: 400: Email already registered
+2024-11-22 11:22:47,244 - app - INFO - Received registration data: {'first_name': 'Asmit', 'last_name': 'oli', 'gender': 'Male', 'email': 'oliasmit872@gmail.com', 'phone': '9810963693', 'address': 'oliasmit@gmail.com', 'password': 'asmitoli12312'}
+2024-11-22 11:22:47,282 - app - WARNING - Email already registered: oliasmit872@gmail.com
+2024-11-22 11:22:47,283 - app - ERROR - Error during registration: 400: Email already registered
+2024-11-22 11:23:13,726 - app - INFO - Received registration data: {'first_name': 'Asmit', 'last_name': 'oli', 'gender': 'Male', 'email': 'oliasmit872@gmail.com', 'phone': '9810963693', 'address': 'kathmandu', 'password': 'asdfghjkl'}
+2024-11-22 11:23:13,771 - app - WARNING - Email already registered: oliasmit872@gmail.com
+2024-11-22 11:23:13,771 - app - ERROR - Error during registration: 400: Email already registered
+2024-11-22 11:23:33,743 - app - INFO - Received registration data: {'first_name': 'Asmit', 'last_name': 'Oli', 'gender': 'Male', 'email': 'oliasmit@gmail.com', 'phone': '9810963693', 'address': 'kathmandu', 'password': 'asdfghjkl'}
+2024-11-22 11:23:34,158 - app - INFO - User registered successfully with ID: 674018dad67d3242f7f5754f
+2024-11-22 11:23:44,572 - app - INFO - User logged in successfully: oliasmit@gmail.com
+2024-11-22 11:23:49,736 - app - WARNING - Invalid password for email: oliasmit@gmail.com
+2024-11-22 11:23:49,739 - app - ERROR - Error during login: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 190, in login_user
+    raise HTTPException(status_code=400, detail="Invalid email or password")
+fastapi.exceptions.HTTPException: 400: Invalid email or password
+
+2024-11-22 11:25:42,404 - app - WARNING - Invalid password for email: oliasmit@gmail.com
+2024-11-22 11:25:42,425 - app - ERROR - Error during login: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 190, in login_user
+    raise HTTPException(status_code=400, detail="Invalid email or password")
+fastapi.exceptions.HTTPException: 400: Invalid email or password
+
+2024-11-22 11:25:53,031 - app - WARNING - Invalid password for email: oliasmit@gmail.com
+2024-11-22 11:25:53,031 - app - ERROR - Error during login: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 190, in login_user
+    raise HTTPException(status_code=400, detail="Invalid email or password")
+fastapi.exceptions.HTTPException: 400: Invalid email or password
+
+2024-11-22 11:25:56,450 - app - WARNING - Invalid password for email: oliasmit@gmail.com
+2024-11-22 11:25:56,450 - app - ERROR - Error during login: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 190, in login_user
+    raise HTTPException(status_code=400, detail="Invalid email or password")
+fastapi.exceptions.HTTPException: 400: Invalid email or password
+
+2024-11-22 11:25:59,519 - app - WARNING - Invalid password for email: oliasmit@gmail.com
+2024-11-22 11:25:59,519 - app - ERROR - Error during login: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 190, in login_user
+    raise HTTPException(status_code=400, detail="Invalid email or password")
+fastapi.exceptions.HTTPException: 400: Invalid email or password
+
+2024-11-22 11:26:05,014 - app - INFO - User logged in successfully: oliasmit@gmail.com
+2024-11-22 11:40:28,708 - app - INFO - User logged in successfully: oliasmit@gmail.com
+2024-11-22 11:51:15,694 - app - WARNING - Invalid password for email: oliasmit@gmail.com
+2024-11-22 11:51:15,705 - app - ERROR - Error during login: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 190, in login_user
+    raise HTTPException(status_code=400, detail="Invalid email or password")
+fastapi.exceptions.HTTPException: 400: Invalid email or password
+
+2024-11-22 11:51:29,209 - app - WARNING - User not found: oliasmiasasat@gmail.com
+2024-11-22 11:51:29,210 - app - ERROR - Error during login: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 185, in login_user
+    raise HTTPException(status_code=400, detail="Invalid email or password")
+fastapi.exceptions.HTTPException: 400: Invalid email or password
+
+2024-11-22 11:52:03,462 - app - WARNING - User not found: oliasmiasasat@gmail.com
+2024-11-22 11:52:03,462 - app - ERROR - Error during login: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 185, in login_user
+    raise HTTPException(status_code=400, detail="Invalid email or password")
+fastapi.exceptions.HTTPException: 400: Invalid email or password
+
+2024-11-22 11:52:10,659 - app - INFO - User logged in successfully: oliasmit@gmail.com
+2024-11-22 12:04:00,364 - app - INFO - Connected to MongoDB successfully.
+2024-11-22 12:04:04,436 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-23 21:13:55,163 - app - INFO - Connected to MongoDB successfully.
+2024-11-23 21:14:04,669 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-23 21:20:39,062 - app - INFO - Connected to MongoDB successfully.
+2024-11-23 21:20:41,331 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-23 21:22:19,217 - app - INFO - Connected to MongoDB successfully.
+2024-11-23 21:22:21,904 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-23 21:22:59,535 - app - INFO - Connected to MongoDB successfully.
+2024-11-23 21:23:03,085 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-23 21:36:15,274 - app - INFO - User logged in successfully: oliasmit@gmail.com
+2024-11-23 21:37:07,506 - app - INFO - Received registration data: {'first_name': 'Alish', 'last_name': 'oli', 'gender': 'Male', 'email': 'asl@gmail.com', 'phone': '9810963693', 'address': 'Dang', 'password': 'asmitoli123'}
+2024-11-23 21:37:07,851 - app - INFO - User registered successfully with ID: 6741fa27d46d29df6a3862cc
+2024-11-23 21:37:17,688 - app - WARNING - Invalid password for email: asl@gmail.com
+2024-11-23 21:37:17,728 - app - ERROR - Error during login: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 190, in login_user
+    raise HTTPException(status_code=400, detail="Invalid email or password")
+fastapi.exceptions.HTTPException: 400: Invalid email or password
+
+2024-11-23 21:37:24,600 - app - INFO - User logged in successfully: asl@gmail.com
+2024-11-24 07:10:43,290 - app - INFO - Connected to MongoDB successfully.
+2024-11-24 07:10:46,142 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-24 07:11:17,510 - app - INFO - User logged in successfully: asl@gmail.com
+2024-11-24 08:13:36,180 - app - INFO - Connected to MongoDB successfully.
+2024-11-24 08:13:38,612 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-24 08:14:16,433 - app - INFO - User logged in successfully: asl@gmail.com
+2024-11-24 08:39:35,553 - app - INFO - Connected to MongoDB successfully.
+2024-11-24 08:39:37,619 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-24 08:42:30,954 - app - INFO - User logged in successfully: asl@gmail.com
+2024-11-24 08:43:46,160 - app - INFO - Received registration data: {'first_name': 'Dev', 'last_name': 'Bakhati', 'gender': 'Male', 'email': 'dev@gmail.com', 'phone': '9873216540', 'address': 'kathmandu', 'password': '1234567890'}
+2024-11-24 08:43:46,421 - app - INFO - Received registration data: {'first_name': 'Dev', 'last_name': 'Bakhati', 'gender': 'Male', 'email': 'dev@gmail.com', 'phone': '9873216540', 'address': 'kathmandu', 'password': '1234567890'}
+2024-11-24 08:43:46,484 - app - INFO - User registered successfully with ID: 67429666710ac76d06b81636
+2024-11-24 08:43:46,922 - app - WARNING - Email already registered: dev@gmail.com
+2024-11-24 08:43:46,922 - app - ERROR - Error during registration: 400: Email already registered
+2024-11-24 08:44:08,752 - app - INFO - User logged in successfully: dev@gmail.com
+2024-11-24 09:25:35,058 - app - ERROR - Failed to connect to MongoDB: All nameservers failed to answer the query _mongodb._tcp.cluster0.cserklj.mongodb.net. IN SRV: Server Do53:192.168.137.1@53 answered [WinError 10051] A socket operation was attempted to an unreachable network
+2024-11-24 09:38:49,621 - app - ERROR - Failed to connect to MongoDB: All nameservers failed to answer the query _mongodb._tcp.cluster0.cserklj.mongodb.net. IN SRV: Server Do53:192.168.137.1@53 answered [WinError 10051] A socket operation was attempted to an unreachable network
+2024-11-24 09:41:35,893 - app - INFO - Connected to MongoDB successfully.
+2024-11-24 09:41:38,608 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-24 09:42:23,684 - app - INFO - Received registration data: {'first_name': 'Asmit', 'last_name': 'oli', 'gender': 'Male', 'email': 'asmit23@gmail.com', 'phone': '9819827261', 'address': 'kathmandu', 'password': 'asdfghj'}
+2024-11-24 09:42:24,706 - app - INFO - User registered successfully with ID: 6742a42470b258cf8ccf9b28
+2024-11-24 09:42:30,492 - app - INFO - User logged in successfully: asmit23@gmail.com
+2024-11-24 10:19:21,307 - app - INFO - Connected to MongoDB successfully.
+2024-11-24 10:19:23,584 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-24 10:20:09,921 - app - INFO - Received registration data: {'first_name': 'aayush', 'last_name': 'oli', 'gender': 'Male', 'email': 'olimit872@gmail.com', 'phone': '9898989898', 'address': 'Dang', 'password': 'asdfghj'}
+2024-11-24 10:20:10,898 - app - INFO - User registered successfully with ID: 6742acfe9dea629961767c93
+2024-11-24 10:20:18,150 - app - INFO - User logged in successfully: olimit872@gmail.com
+2024-11-24 11:12:27,634 - app - INFO - User logged in successfully: olimit872@gmail.com
+2024-11-25 14:03:52,609 - app - INFO - Connected to MongoDB successfully.
+2024-11-25 14:04:09,993 - app - INFO - Model and preprocessing pipeline loaded successfully.
+2024-11-25 14:04:49,758 - app - INFO - User logged in successfully: olimit872@gmail.com
+2024-11-25 14:05:14,961 - app - INFO - Received registration data: {'first_name': 'suraj', 'last_name': 'tamang', 'gender': 'Male', 'email': 'asmit612@gmail.com', 'phone': '9810963693', 'address': 'kathmandu', 'password': 'asmitoli123'}
+2024-11-25 14:05:15,348 - app - INFO - User registered successfully with ID: 6744333fde2222c4e04ecf69
+2024-11-25 14:05:23,503 - app - WARNING - Invalid password for email: asmit612@gmail.com
+2024-11-25 14:05:23,550 - app - ERROR - Error during login: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 190, in login_user
+    raise HTTPException(status_code=400, detail="Invalid email or password")
+fastapi.exceptions.HTTPException: 400: Invalid email or password
+
+2024-11-25 14:05:28,190 - app - WARNING - Invalid password for email: asmit612@gmail.com
+2024-11-25 14:05:28,190 - app - ERROR - Error during login: Traceback (most recent call last):
+  File "C:\Users\Asmit\Desktop\diabetes_detection\app.py", line 190, in login_user
+    raise HTTPException(status_code=400, detail="Invalid email or password")
+fastapi.exceptions.HTTPException: 400: Invalid email or password
+
+2024-11-25 14:05:36,947 - app - INFO - User logged in successfully: asmit612@gmail.com
