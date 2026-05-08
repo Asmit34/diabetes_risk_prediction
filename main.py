@@ -16,6 +16,7 @@ import sys
 
 # app = FastAPI()
 
+<<<<<<< HEAD
 origins = ["*"]
 # Cross-Origin Resource Sharing (CORS)
 app.add_middleware(
@@ -30,6 +31,22 @@ app.add_middleware(
 @app.get("/", tags=["authentication"])
 async def index():
     return RedirectResponse(url="/docs")
+=======
+# origins = ["*"]
+# # Cross-Origin Resource Sharing (CORS)
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=origins,
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
+
+
+# @app.get("/", tags=["authentication"])
+# async def index():
+#     return RedirectResponse(url="/docs")
+>>>>>>> ed7611ae3604b226d42bb1657982103d8034da7c
 
 
 # @app.get("/train")

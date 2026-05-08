@@ -129,7 +129,11 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+<<<<<<< HEAD
 
+=======
+node_modules
+>>>>>>> ed7611ae3604b226d42bb1657982103d8034da7c
 # Spyder project settings
 .spyderproject
 .spyproject

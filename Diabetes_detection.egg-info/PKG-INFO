@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Diabetes-detection
+Version: 0.0.1
+Author: Asmit oli
+Author-email: oliasmit872@gmail.com
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: pymongo[srv]
+Requires-Dist: python-dotenv
+Requires-Dist: certifi
+Requires-Dist: PyYAML
+Requires-Dist: dill
+Requires-Dist: spicy
+Requires-Dist: imblearn==0.0
+Requires-Dist: xgboost

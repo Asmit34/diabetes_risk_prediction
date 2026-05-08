@@ -30,7 +30,11 @@ class ModelTrainer:
 
     def train_model(self,x_train,y_train):
         try:
+<<<<<<< HEAD
             rf = XGBClassifier()
+=======
+            rf = RandomForestClassifier()
+>>>>>>> ed7611ae3604b226d42bb1657982103d8034da7c
             rf.fit(x_train,y_train)
             return rf
         except Exception as e:

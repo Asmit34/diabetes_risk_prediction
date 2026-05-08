@@ -21,8 +21,13 @@ DIABETES_COLLECTION_NAME = os.getenv("DIABETES_COLLECTION_NAME", "diabetes")
 MONGO_DB_URL = os.getenv("MONGO_DB_URL")
 
 # Paths for model and preprocessing files
+<<<<<<< HEAD
 MODEL_PATH = os.getenv("MODEL_PATH", os.path.join("models", "model.pkl"))
 PREPROCESSING_PATH = os.getenv("PREPROCESSING_PATH", os.path.join("models", "preprocessing.pkl"))
+=======
+MODEL_PATH = os.getenv("MODEL_PATH", r'C:\Users\Asmit\Desktop\diabetes_detection\saved_models\1731484161\model.pkl')
+PREPROCESSING_PATH = os.getenv("PREPROCESSING_PATH", r'C:\Users\Asmit\Desktop\diabetes_detection\artifact\11_13_2024_13_34_13\data_transformation\transformed_object\preprocessing.pkl')
+>>>>>>> ed7611ae3604b226d42bb1657982103d8034da7c
 
 # Initialize FastAPI app
 app = FastAPI()
@@ -30,7 +35,11 @@ app = FastAPI()
 # CORS settings
 app.add_middleware(
     CORSMiddleware,
+<<<<<<< HEAD
     allow_origins=["http://127.0.0.1:3000", "http://localhost:3000"],
+=======
+    allow_origins=["*"],
+>>>>>>> ed7611ae3604b226d42bb1657982103d8034da7c
     allow_credentials=True,
     allow_methods=["*"],  # Allows all HTTP methods
     allow_headers=["*"],  # Allows all headers
@@ -49,9 +58,15 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+<<<<<<< HEAD
 # @app.get("/", tags=["authentication"])
 # async def index():
 #     return RedirectResponse(url="/docs")
+=======
+@app.get("/", tags=["authentication"])
+async def index():
+    return RedirectResponse(url="/docs")
+>>>>>>> ed7611ae3604b226d42bb1657982103d8034da7c
 
 # MongoDB connection setup with error handling
 try:
