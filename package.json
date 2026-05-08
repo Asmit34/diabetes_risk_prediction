@@ -1,0 +1,47 @@
+{
+  "name": "diabetes-detection",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-transform-private-property-in-object": "^7.25.10",
+    "@testing-library/jest-dom": "^5.17.1",
+    "@testing-library/react": "^13.4.1",
+    "@testing-library/user-event": "^13.5.1",
+    "axios": "^1.8.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.1",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^6.1.14",
+    "web-vitals": "^3.1.0"
+  },
+  "scripts": {
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://127.0.0.1:8000",
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.12",
+    "cross-env": "^7.0.3"
+  }
+}

@@ -1,0 +1,17 @@
+# Project requirements
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+pymongo[srv]
+python-dotenv
+certifi
+PyYAML
+dill
+spicy
+imblearn == 0.0
+xgboost
+# -e .
+fastapi
+django
