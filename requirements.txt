@@ -1,17 +1,23 @@
-# Project requirements
 numpy
 pandas
 scikit-learn
 matplotlib
 seaborn
-pymongo[srv]
+scipy
+xgboost
+
+fastapi
+uvicorn[standard]
+
+pydantic
+email-validator
+python-multipart
+
+motor
 python-dotenv
 certifi
 PyYAML
 dill
-spicy
-imblearn == 0.0
-xgboost
-# -e .
-fastapi
-django
+bcrypt
+imbalanced-learn
+joblib
